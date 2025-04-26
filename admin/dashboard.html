@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الأدمن</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="dashboard-body">
+    <nav class="admin-nav">
+        <div class="admin-logo">لوحة التحكم</div>
+        <div class="admin-user">
+            <span id="adminName">مدير النظام</span>
+            <button id="logoutBtn" class="logout-button">تسجيل خروج</button>
+        </div>
+    </nav>
+    
+    <div class="dashboard-container">
+        <aside class="admin-sidebar">
+            <ul class="admin-menu">
+                <li class="active"><a href="#dashboard">الرئيسية</a></li>
+                <li><a href="#messages">الرسائل</a></li>
+                <li><a href="#services">إدارة الخدمات</a></li>
+                <li><a href="#users">المستخدمين</a></li>
+                <li><a href="#settings">الإعدادات</a></li>
+            </ul>
+        </aside>
+        
+        <main class="admin-main">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>إجمالي الزيارات</h3>
+                    <p class="stat-number">2</p>
+                </div>
+                <div class="stat-card">
+                    <h3>الرسائل الجديدة</h3>
+                    <p class="stat-number">2</p>
+                </div>
+                <div class="stat-card">
+                    <h3>المستخدمين النشطين</h3>
+                    <p class="stat-number">2</p>
+                </div>
+            </div>
+            
+            <div class="recent-messages">
+                <h2>آخر الرسائل</h2>
+                <div class="messages-list">
+                    <!-- Messages will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

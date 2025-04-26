@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSouqe</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">TechSouq</span>
+                <!-- <span class="logo-text-ar">تك سوق</span> -->
+            </div>
+            <div class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#shop">التسوق</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="admin/dashboard.html" class="dashboard-link">لوحة التحكم</a></li>
+                <li>
+                    <button id="cart-button" class="cart-button">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </button>
+                </li>
+                <li><button id="theme-toggle" class="theme-toggle">
+                    <span class="theme-toggle-icon">🌙</span>
+                </button></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>مرحباً بكم في موقعنا</h1>
+            <p>نحن نقدم أفضل الخدمات لعملائنا الكرام</p>
+            <a href="#shop" class="cta-button">ابدأ الآن</a>
+        </section>
+
+        <!-- <section id="services" class="services-section">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>خدمة 1</h3>
+                    <p>وصف الخدمة الأولى</p>
+                </div>
+                <div class="service-card">
+                    <h3>خدمة 2</h3>
+                    <p>وصف الخدمة الثانية</p>
+                </div>
+                <div class="service-card">
+                    <h3>خدمة 3</h3>
+                    <p>وصف الخدمة الثالثة</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="about" class="about-section">
+            <h2>من نحن</h2>
+            <p>نحن شركة رائدة في مجال تقديم الخدمات الإلكترونية المميزة</p>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <h2>منتجاتنا</h2>
+            
+            <!-- قسم الموبايلات -->
+            <div class="category-section">
+                <h3>الهواتف الذكية</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/iPhone 14 Pro.webp" alt="iPhone 14 Pro">
+                        <h4>iPhone 14 Pro</h4>
+                        <p class="price">4999 درهم</p>
+                        <p class="description">شاشة 6.1 بوصة، 256GB، كاميرا متطورة</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Samsung S23.avif" alt="Samsung S23">
+                        <h4>Samsung S23</h4>
+                        <p class="price">4599 درهم</p>
+                        <p class="description">شاشة 6.8 بوصة، 512GB، معالج قوي</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Xiaomi 13.webp" alt="Xiaomi 13">
+                        <h4>Xiaomi 13</h4>
+                        <p class="price">3299 درهم</p>
+                        <p class="description">شاشة 6.4 بوصة، 256GB، بطارية كبيرة</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Huawei-P60-Pro.webp" alt="Huawei P60 Pro">
+                        <h4>Huawei P60 Pro</h4>
+                        <p class="price">3799 درهم</p>
+                        <p class="description">شاشة 6.6 بوصة، كاميرا متطورة، 256GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/phones/phone5.jpg" alt="OnePlus 11">
+                        <h4>OnePlus 11</h4>
+                        <p class="price">3299 درهم</p>
+                        <p class="description">شاشة 6.7 بوصة، شحن سريع، 256GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Google Pixel 7 Pro.webp" alt="Google Pixel 7 Pro">
+                        <h4>Google Pixel 7 Pro</h4>
+                        <p class="price">3899 درهم</p>
+                        <p class="description">كاميرا ذكية، 256GB، نظام نقي</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم التابلت -->
+            <div class="category-section">
+                <h3>الأجهزة اللوحية</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/iPad Pro 2025.webp" alt="iPad Pro">
+                        <h4>iPad Pro 2025</h4>
+                        <p class="price">5999 درهم</p>
+                        <p class="description">شاشة 12.9 بوصة، معالج M2، 512GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Samsung Tab S9.webp" alt="Samsung Tab S9">
+                        <h4>Samsung Tab S9</h4>
+                        <p class="price">4799 درهم</p>
+                        <p class="description">شاشة 11 بوصة، قلم S Pen، 256GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Lenovo Tab P12.webp" alt="Lenovo Tab P12">
+                        <h4>Lenovo Tab P12</h4>
+                        <p class="price">2999 درهم</p>
+                        <p class="description">شاشة 12 بوصة، 128GB، بطارية طويلة</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Huawei MatePad Pro.webp" alt="Huawei MatePad Pro">
+                        <h4>Huawei MatePad Pro</h4>
+                        <p class="price">3299 درهم</p>
+                        <p class="description">شاشة 12.6 بوصة، قلم ذكي، 256GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Microsoft Surface Pro 9.webp" alt="Microsoft Surface Pro">
+                        <h4>Microsoft Surface Pro 9</h4>
+                        <p class="price">5499 درهم</p>
+                        <p class="description">شاشة 13 بوصة، معالج i7، 512GB</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Xiaomi Pad 6 Pro.jpg" alt="Xiaomi Pad 6 Pro">
+                        <h4>Xiaomi Pad 6 Pro</h4>
+                        <p class="price">2499 درهم</p>
+                        <p class="description">شاشة 11 بوصة، 256GB، أداء قوي</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الشاشات -->
+            <div class="category-section">
+                <h3>الشاشات</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/LG UltraGear Gaming.avif" alt="LG UltraGear">
+                        <h4>LG UltraGear Gaming</h4>
+                        <p class="price">3499 درهم</p>
+                        <p class="description">شاشة 27 بوصة، 165Hz، 1ms، 4K</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Samsung Odyssey G7.jpg" alt="Samsung Odyssey">
+                        <h4>Samsung Odyssey G7</h4>
+                        <p class="price">4299 درهم</p>
+                        <p class="description">شاشة 32 بوصة، 240Hz، منحنية</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Dell UltraSharp.jpg" alt="Dell UltraSharp">
+                        <h4>Dell UltraSharp</h4>
+                        <p class="price">2899 درهم</p>
+                        <p class="description">شاشة 24 بوصة، IPS، ألوان دقيقة</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/ASUS ROG Swift.webp" alt="ASUS ROG Swift">
+                        <h4>ASUS ROG Swift</h4>
+                        <p class="price">4999 درهم</p>
+                        <p class="description">شاشة 32 بوصة، 360Hz، HDR 1000</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/BenQ PD3205U.webp" alt="BenQ Designer">
+                        <h4>BenQ PD3205U</h4>
+                        <p class="price">3299 درهم</p>
+                        <p class="description">شاشة 32 بوصة، 4K، للمصممين</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/MSI Optix MAG.png" alt="MSI Optix">
+                        <h4>MSI Optix MAG</h4>
+                        <p class="price">2799 درهم</p>
+                        <p class="description">شاشة 27 بوصة، 165Hz، منحنية</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الأجهزة الصوتية -->
+            <div class="category-section">
+                <h3>الأجهزة الصوتية</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/New/images.jpg" alt="Apple AirPods Pro">
+                        <h4>Apple AirPods Pro 2</h4>
+                        <p class="price">999 درهم</p>
+                        <p class="description">إلغاء الضوضاء، جودة صوت عالية</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/New/Sony WH-1000XM5.avif" alt="Sony WH-1000XM5">
+                        <h4>Sony WH-1000XM5</h4>
+                        <p class="price">1499 درهم</p>
+                        <p class="description">سماعات لاسلكية فوق الأذن</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/New/JBL Charge 5.jpg" alt="JBL Charge 5">
+                        <h4>JBL Charge 5</h4>
+                        <p class="price">599 درهم</p>
+                        <p class="description">سماعة بلوتوث محمولة، مقاومة للماء</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الملحقات -->
+            <div class="category-section">
+                <h3>ملحقات إلكترونية</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/New/Logitech MX Master 3.jpg" alt="Logitech MX Master 3">
+                        <h4>Logitech MX Master 3</h4>
+                        <p class="price">399 درهم</p>
+                        <p class="description">فأرة لاسلكية احترافية</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/New/Keychron K88.webp" alt="Keychron K8">
+                        <h4>Keychron K8</h4>
+                        <p class="price">499 درهم</p>
+                        <p class="description">لوحة مفاتيح ميكانيكية لاسلكية</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/New/Anker PowerCore.webp" alt="Anker PowerCore">
+                        <h4>Anker PowerCore</h4>
+                        <p class="price">199 درهم</p>
+                        <p class="description">باور بنك 20000mAh</p>
+                        <button class="buy-button">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>اتصل بنا</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="الاسم">
+                <input type="email" placeholder="البريد الإلكتروني">
+                <textarea placeholder="رسالتك"></textarea>
+                <button type="submit" class="submit-button">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- نافذة السلة المنبثقة -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>سلة التسوق</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- سيتم إضافة العناصر هنا عن طريق JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>المجموع:</span>
+                    <span id="cart-total-amount">0 درهم</span>
+                </div>
+                <button class="checkout-button">إتمام الشراء</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+</body>
+</html>
